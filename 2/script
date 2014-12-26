@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export LIBGL_DRIVERS_PATH=`dirname $0`
+
+$@

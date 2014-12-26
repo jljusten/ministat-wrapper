@@ -1,0 +1,5 @@
+#!/bin/bash
+RUN_DIR=`dirname $0`
+cd $RUN_DIR
+RUN_DIR=`pwd`
+./compare-perf.sh $RUN_DIR/filtered-command $RUN_DIR/1/script $RUN_DIR/2/script
