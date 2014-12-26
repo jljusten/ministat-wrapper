@@ -1,0 +1,4 @@
+#!/bin/bash
+SYNMARK_TEST=OglTerrainFlyInst
+cd $HOME/programs/SynMark2-6.0.0
+DISPLAY=:0 ./synmark2 $SYNMARK_TEST

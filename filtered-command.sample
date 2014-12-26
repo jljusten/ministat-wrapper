@@ -1,0 +1,2 @@
+#!/bin/bash
+`dirname $0`/command 2>/dev/null | awk '/FPS: / {if ($2 >= 0.0) print $2}'
