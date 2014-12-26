@@ -1,0 +1,19 @@
+Based on Eric's wrapper: http://anholt.net/compare-perf/
+
+Pre-requisite packages: ministat
+
+Usage:
+1. Copy old i965_dri.so under the '1' directory
+2. Copy new i965_dri.so under the '2' directory
+3. Setup command script
+   * Copy command.sample to command
+   * Customize command script
+   * Test by running '1/script ./command' and '2/script/command'
+4. Setup filtered-command script
+   * Copy filtered-command.sample to filtered-command
+   * Customize filtered-command script
+   * Test by running '1/script ./filtered-command'
+   * It should output a single number
+5. Run ./run-comparison script to collect data
+6. Press Ctrl-C to break when you have enough data
+7. Run 'ministat before after' again to see output again
